@@ -1,0 +1,50 @@
+# HSD Reporting
+
+> Independent, plain-language histories of what the Hanover School Division (Manitoba, Canada) board of trustees has decided since July 2013, organised by issue. Every decision links to its page of the official minutes on hsd.ca; news coverage fills in what the minutes leave out, attributed and linked.
+
+- Sources: the board's 158 sets of public minutes (Jul 2, 2013 to Sept 15, 2026), agendas, division policies, budgets, audited statements and news releases on hsd.ca; local and provincial news coverage.
+- The minutes record vote counts, not how each trustee voted. Individual votes are named only from a recorded vote in the minutes or a cited news report.
+- Trustees and senior division staff are named. Parents, students and other members of the public are identified by initials only, or not at all.
+- HSD does not post meeting video. Closed (in-camera) Committee of the Whole minutes are not published. Each report has an 'About this page' section saying what could not be confirmed.
+- Board for 2026-2030 (elected Oct 28, 2026): Jenn Elliot, Jeff Friesen, Shayne Barkman, Jacqueline Morgan, Tess Doerksen, Josh Loewen, Jeremy Neufeld, Erin Williams and Cheryl Froese.
+- Official records: https://hsd.ca/governance/agendas-minutes/ (minutes and agendas), https://hsd.ca/governance/division-policies/ (policies).
+
+## Beliefs and values in school
+
+Religion, sexuality and what children are taught: the issues that have drawn the most public debate.
+
+- [Religion in Hanover schools: prayer, religious instruction and parent petitions](https://hsdreporting.ca/religion-in-schools/): How parent petitions bring morning religious exercises and weekly religious instruction into Hanover schools, how the board handled late petitions and COVID-19, its origin-of-life policy, and a 2026 debate over religious neutrality. (75 decisions · Meetings May 2014 – Jun 2026)
+- [Gender, sexuality and classroom materials: what the board decided](https://hsdreporting.ca/gender-sexuality-materials/): The diversity policy, the 2016 and 2024 debates over sexual-health classes, the new rule on classroom materials, the 2026 “mature minor” motion the province overruled, and what each side argued. (11 decisions · Meetings Mar 2014 – Sept 2026)
+
+## Money and buildings
+
+Budgets, school taxes, and keeping up with one of Manitoba’s fastest-growing divisions.
+
+- [Budgets, school taxes and spending: how Hanover pays for its schools](https://hsdreporting.ca/budget-taxes/): Every budget and mill rate from 2014/15 to 2026/27, what school taxes cost property owners, how provincial freezes, rebates and funding shaped the board’s choices, and its decisions on reserves, borrowing, banking and trustee pay. (125 decisions · Meetings Sept 2013 – Sept 2026)
+- [Growing enrolment: new schools, crowded classrooms and catchment changes](https://hsdreporting.ca/schools-growth/): About 1,400 more students since 2013: capital requests to the province, new schools in Niverville and Steinbach, additions, portable classrooms, and the catchment and grade changes that moved children between schools. (53 decisions · Meetings Aug 2013 – Sept 2026)
+
+## Students and classrooms
+
+What students learn, how they are kept safe, and how the pandemic changed school.
+
+- [What students learn: programs, graduation, student services and teachers](https://hsdreporting.ca/learning-programs/): Grade 9 moving to Steinbach and back out, kindergarten and school-day schedules, five rewrites of the graduation policy, attendance, student services, school meals, teaching cuts and the 2023 educational assistants’ strike. (55 decisions · Meetings Nov 2013 – Jun 2026)
+- [Student safety, discipline, phones and school buses](https://hsdreporting.ca/safety-discipline/): The safe schools and discipline policies, seclusion rooms, the 2024 cellphone ban, threats and lockdowns, background checks for staff, school buses and crossing guards. (80 decisions · Meetings Nov 2013 – Jun 2026)
+- [COVID-19 in Hanover schools, 2020–2022: who decided what](https://hsdreporting.ca/covid-19/): How the pandemic closed and reopened Hanover schools, what the province and public health ordered, what the division and board decided, and the protests over masks and vaccine rules. (28 decisions · Meetings Mar 2020 – Jun 2025)
+
+## The board itself
+
+How trustees run the board, hold each other to account, and answer to voters and the province.
+
+- [How the board governs itself: conduct, conflicts, hiring and openness](https://hsdreporting.ca/board-governance/): How trustees have disciplined their own members, handled conflicts of interest, hired senior staff, met in public and behind closed doors, and faced provincial oversight and elections. (67 decisions · Meetings Nov 2013 – Jun 2026)
+
+## About this site
+
+Where the information comes from and how it is checked.
+
+- [Ask your own AI about the board](https://hsdreporting.ca/ask-your-ai/): A copy-ready prompt for fair, evidence-based answers from ChatGPT, Claude, Gemini or Copilot, and ground rules for having an AI agent read the official minutes.
+- [How these reports are made](https://hsdreporting.ca/how-its-made/): The sources, the steps from scanned minutes to report, and what AI does and doesn’t do.
+- [Data accuracy](https://hsdreporting.ca/data-accuracy/): How every name and vote in 1,660 motions was checked against the trustees in office, and the 97 clerical slips the checks found in the original minutes.
+
+## Optional
+
+- [Privacy](https://hsdreporting.ca/privacy/): no cookies, no tracking.

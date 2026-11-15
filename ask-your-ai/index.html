@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231f5f8b'/%3E%3Ctext x='16' y='23' font-size='19' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'%3EH%3C/text%3E%3C/svg%3E">
+<title>Ask Your Own AI About the Board | HSD Reporting</title>
+<meta name="description" content="Two ways to research the Hanover School Division board of trustees with your own AI assistant: point a chat assistant at this site with a fair, evidence-first prompt, or have an AI agent read the board's official minutes.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ask your own AI about the board | HSD Reporting">
+<meta property="og:description" content="A copy-ready prompt for fair, evidence-based answers about the Hanover School Division board, and ground rules for running your own AI agent on the official minutes.">
+<meta property="og:url" content="https://hsdreporting.ca/ask-your-ai/">
+<meta property="og:site_name" content="HSD Reporting">
+<link rel="stylesheet" href="../assets/css/style.css">
+<style>
+.prompt { position: relative; margin: 12px 0 18px; }
+.prompt pre { background: var(--surface); color: var(--text); border: 1px solid var(--rule); border-left: 4px solid var(--accent);
+  border-radius: 6px; padding: 14px 16px; margin: 0; white-space: pre-wrap; word-wrap: break-word; overflow-wrap: anywhere;
+  font: 0.92rem/1.5 ui-monospace, "Cascadia Mono", Consolas, monospace; }
+.copy { font: inherit; font-weight: 700; margin-top: 8px; padding: 8px 16px; border-radius: 6px; cursor: pointer;
+  border: 1px solid var(--accent); background: var(--accent); color: var(--surface); }
+.copy:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+.copied { margin-left: 10px; color: var(--muted); font-size: 0.9rem; }
+.option { border: 1px solid var(--rule); background: var(--surface); border-radius: 8px; padding: 4px 18px 10px; margin: 18px 0; }
+.option h2 { margin-top: 14px; }
+.steps li { margin-bottom: 6px; }
+</style>
+</head>
+<body>
+<main>
+
+<p class="sitebar"><a href="../">&larr; HSD Reporting</a></p>
+
+<header class="page">
+  <p class="eyebrow">Research it yourself</p>
+  <h1>Ask your own AI about the board</h1>
+  <p class="lede">You don&rsquo;t have to rely on our reports. Here are two ways to put your own questions about the Hanover School Division board of trustees to an AI assistant, with instructions that keep the answers fair and backed by evidence you can check.</p>
+  <p class="meta">Last updated Nov 14, 2026.</p>
+</header>
+
+<section class="callout">
+  <h2>Which option?</h2>
+  <ul>
+    <li><strong>Option 1: Ask a chat assistant.</strong> Quick and easy. Paste a prompt into ChatGPT, Claude, Gemini or Copilot. Best for questions our reports already cover.</li>
+    <li><strong>Option 2: Have an AI agent read the official minutes.</strong> Takes a little setup and patience. Your AI reads the board&rsquo;s minutes on hsd.ca itself, meeting by meeting. Best for questions our reports don&rsquo;t cover.</li>
+  </ul>
+</section>
+
+<div class="option">
+<h2 id="chat">Option 1: Ask a chat assistant</h2>
+<ol class="steps">
+  <li>Open an AI chat assistant that can browse the web (most can; some need web search turned on).</li>
+  <li>Copy the prompt below, paste it in, and replace the last line with your question.</li>
+  <li>Open the links to the minutes in the answer for anything that matters to you.</li>
+</ol>
+
+<div class="prompt">
+<!-- Keep in sync with #home-prompt in ../index.html -->
+<pre id="chat-prompt">I have a question about the Hanover School Division board of trustees (Manitoba). Please research it using these sources:
+- https://hsdreporting.ca/llms.txt (a guide to every report on the site)
+- https://hsdreporting.ca/ (the reports themselves)
+- https://hsd.ca/governance/agendas-minutes/ (the board's official minutes and agendas, if the reports don't cover my question)
+
+How to answer:
+1. Be neutral. Describe what trustees and the division said and did without guessing at motives or taking sides. Where people disagreed, give each side's strongest points in their own words.
+2. Back every point with specific evidence: the meeting date, the motion or a short exact quote, and a link to the page of the minutes or the news story where it appears.
+3. The minutes record how many trustees voted for and against, not who. Don't say how a trustee voted unless the minutes record a named vote or a news source you cite reports it.
+4. Keep three things clearly apart: what the record shows, what the site's analysis says, and your own conclusions.
+5. If you can't open these sources, or they don't answer my question, say so plainly. Don't fill gaps from memory or guesswork, and tell me what you could not confirm.
+6. Parents, students and other members of the public are not named in these sources. Don't try to identify them.
+
+My question: [type your question here]</pre>
+<button class="copy" type="button" data-target="chat-prompt">Copy prompt</button><span class="copied" role="status" aria-live="polite"></span>
+</div>
+<p>Example questions: &ldquo;How has the board decided which schools hold religious exercises?&rdquo; &middot; &ldquo;What did the board decide about the Grade 9 catchments for Kleefeld and Bothwell?&rdquo; &middot; &ldquo;How much have school taxes gone up since the provincial freeze ended?&rdquo;</p>
+</div>
+
+<div class="option">
+<h2 id="agent">Option 2: Have an AI agent read the official minutes</h2>
+<p>The board posts its minutes from July 2013 on, as PDFs, on <a href="https://hsd.ca/governance/agendas-minutes/">hsd.ca</a>. Most are scanned paper, so the AI has to read each page as an image or run text recognition on it. An AI <em>agent</em> that can browse and read files (such as Claude Code, OpenAI Codex, Gemini CLI, Cursor, or ChatGPT and Claude in agent or research mode) can work through them to answer your question.</p>
+<ol class="steps">
+  <li><strong>Open your AI agent</strong> and make sure it can browse the web and read PDFs.</li>
+  <li><strong>Paste the ground rules below</strong>, then your question.</li>
+  <li><strong>Narrow it down</strong> if you can (a year, a school, a policy). Reading every set of minutes takes a while.</li>
+</ol>
+
+<div class="prompt">
+<pre id="agent-prompt">You are helping me research the Hanover School Division (Manitoba) board of trustees using its official records. Follow these rules:
+
+1. Start with https://hsdreporting.ca/llms.txt and any report on that site that covers my question. Then read the board's own minutes and agendas at https://hsd.ca/governance/agendas-minutes/ (PDFs from July 2013 on; most are scanned, so read the page images or run text recognition, and check names and numbers on the image).
+2. Be neutral. Report what was decided and said. Don't guess at motives, don't take sides, and when people disagreed, give each side's strongest points in their own words.
+3. Back every point with the meeting date, the motion number or exact wording, and a link to the PDF page (add #page=N to the PDF address).
+4. The minutes give vote counts ("Aye: 7 Nay: 2"), not names. Never work out how a trustee voted from the counts, from who moved or seconded a motion, or from who was absent. Name individual votes only from a recorded vote in the minutes or from a news source you cite.
+5. Many matters are decided in closed (in-camera) Committee of the Whole meetings, whose minutes are not published. Not finding something in the public minutes is not proof it never happened.
+6. Don't name parents, students or other members of the public who appear in the minutes. Initials at most.
+7. Say what you could not find or confirm, and keep quotes and your own summary clearly separate.
+
+My question: [type your question here]</pre>
+<button class="copy" type="button" data-target="agent-prompt">Copy ground rules</button><span class="copied" role="status" aria-live="polite"></span>
+</div>
+</div>
+
+<section>
+  <h2>Things to keep in mind</h2>
+  <ul>
+    <li><strong>AI assistants make mistakes.</strong> They can misread a scanned page, mix up two meetings or invent a quote. The links to the minutes are there so you can check, and the division&rsquo;s minutes are the official record.</li>
+    <li><strong>The board doesn&rsquo;t post meeting video</strong>, so what was said in debate is known only from the brief minutes and from news coverage.</li>
+    <li><strong>Your questions go to your AI provider</strong>, not to us. Their privacy terms apply.</li>
+    <li><strong>Found something wrong in our reports?</strong> Email <a href="mailto:steinbachcitycouncilreporting@gmail.com">steinbachcitycouncilreporting@gmail.com</a>.</li>
+  </ul>
+  <p>How the reports are put together, and how the names and votes were checked: <a href="../how-its-made/">How these reports are made</a> and <a href="../data-accuracy/">Data accuracy</a>.</p>
+</section>
+
+<footer class="site">
+  <p><a href="../">HSD Reporting</a> &middot; An independent summary of public school board meetings. Not affiliated with Hanover School Division. &middot; <a href="../how-its-made/">How it's made</a> &middot; <a href="../data-accuracy/">Data accuracy</a> &middot; <a href="../privacy/">Privacy</a></p>
+</footer>
+
+</main>
+<script>
+for (const btn of document.querySelectorAll(".copy")) {
+  btn.addEventListener("click", async () => {
+    const text = document.getElementById(btn.dataset.target).textContent;
+    const note = btn.nextElementSibling;
+    try {
+      await navigator.clipboard.writeText(text);
+      note.textContent = "Copied. Paste it into your AI assistant.";
+    } catch (e) {
+      const range = document.createRange();
+      range.selectNodeContents(document.getElementById(btn.dataset.target));
+      const sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(range);
+      note.textContent = "Selected. Press Ctrl+C (or ⌘+C) to copy.";
+    }
+  });
+}
+</script>
+</body>
+</html>

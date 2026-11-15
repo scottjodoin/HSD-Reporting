@@ -17,7 +17,7 @@ Issue histories, July 2013 to September 2026:
 - [COVID-19 in Hanover schools](covid-19/): closures, remote learning, masks, protests, 2020–2022
 - [How the board governs itself](board-governance/): conduct, conflicts of interest, hiring, closed meetings, provincial oversight
 
-About the site: [How these reports are made](how-its-made/) · [Data accuracy](data-accuracy/) · [Privacy](privacy/)
+About the site: [Ask your own AI about the board](ask-your-ai/) · [How these reports are made](how-its-made/) · [Data accuracy](data-accuracy/) · [Privacy](privacy/)
 
 ## Site layout
 
@@ -27,6 +27,8 @@ This is a plain static site for GitHub Pages (no Jekyll; see `.nojekyll`). It us
 index.html              Home page listing all reports
 <slug>/index.html       One page per issue report (see Reports above)
 how-its-made/, data-accuracy/  Method and accuracy pages
+ask-your-ai/            Copy-ready prompts for researching the board with your own AI
+llms.txt                Guide to every report, for AI assistants (regenerate when reports change)
 sitemap.xml             List of pages for search engines
 assets/css/style.css    Shared styles (follows the browser light/dark setting)
 assets/css/report.css   Extra styles for multi-page topic reports
