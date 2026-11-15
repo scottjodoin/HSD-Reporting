@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231f5f8b'/%3E%3Ctext x='16' y='23' font-size='19' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'%3EH%3C/text%3E%3C/svg%3E">
+<title>HSD Reporting</title>
+<meta name="description" content="Plain-language reports on what the Hanover School Division board of trustees has decided, with every decision linked to the page of the official minutes.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="HSD Reporting">
+<meta property="og:description" content="Plain-language reports on what the Hanover School Division board of trustees has decided, with every decision linked to the page of the official minutes.">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+  /* Home page: newspaper front page, same layout as Steinbach City Council Reporting.
+     Fonts and colour tokens come from assets/css/style.css. */
+  main { max-width: 1120px; }
+  .nameplate { text-align: center; padding: 28px 0 0; }
+  .nameplate .place { font-size: 14px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+  .nameplate h1 { font-size: clamp(34px, 6.4vw, 64px); line-height: 1.02; margin: 0 0 10px; font-weight: 700; letter-spacing: -0.01em; }
+  .nameplate .motto { font-family: var(--font-head); font-size: clamp(17px, 2.2vw, 21px); font-style: italic; margin: 0 auto 14px; max-width: 46em; }
+  .dateline { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 18px; margin: 0 0 26px; padding: 7px 0;
+              border-top: 1px solid var(--text); border-bottom: 3px double var(--text); font-size: 14px; color: var(--text); }
+  .dateline span + span::before { content: "\00B7"; margin-right: 18px; color: var(--muted); }
+
+  .lead { margin: 0 0 36px; padding: 0 0 30px; border-bottom: 1px solid var(--text); max-width: 46em; }
+  .lead .kicker { margin: 0 0 6px; font-weight: 700; color: var(--brick); }
+  .lead h2 { border: 0; margin: 0 0 12px; padding: 0; font-size: clamp(28px, 3.4vw, 40px); line-height: 1.08; font-weight: 700; }
+  .lead .dek { font-size: 19px; margin: 0 0 14px; }
+
+  .sections { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 34px 30px; }
+  section.group { border-top: 6px solid var(--sec); padding-top: 12px; }
+  section.group h2 { border: 0; margin: 0 0 6px; padding: 0; font-size: 26px; line-height: 1.12; }
+  .group-intro { margin: 0 0 12px; color: var(--muted); font-size: 15px; }
+  .report-list { list-style: none; padding: 0; margin: 0; }
+  .report-list > li { margin: 0; padding: 12px 0; }
+  .report-list > li + li { border-top: 1px solid var(--rule); }
+  .how { margin-top: 48px; }
+  .how h2 { font-size: 22px; }
+  .how ul { font-size: 15px; }
+  @media (max-width: 760px) {
+    .dateline { flex-direction: column; gap: 2px; }
+    .dateline span + span::before { content: none; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<header class="nameplate">
+  <p class="place">Hanover School Division, Manitoba</p>
+  <h1>HSD Reporting</h1>
+  <p class="motto">What the Hanover School Division board of trustees decided, in plain language, with every decision linked to its page in the official minutes.</p>
+  <p class="dateline"><span>Board meetings 2013&ndash;2026</span><span>Independent: not affiliated with Hanover School Division</span></p>
+</header>
+
+<article class="lead" aria-labelledby="lead-h">
+  <p class="kicker">Coming soon</p>
+  <h2 id="lead-h">The first reports are being written</h2>
+  <p class="dek">We are working through every public board meeting since July 2013: 158 sets of minutes and 1,660 motions, plus the agendas, budgets, audited statements and division policies. Reports will appear here by topic.</p>
+</article>
+
+<section class="how" aria-labelledby="how-h">
+  <h2 id="how-h">How these reports will work</h2>
+  <ul>
+    <li><strong>The source is the board's own record.</strong> Every decision links to the page of the official minutes on hsd.ca where it appears.</li>
+    <li><strong>Trustees are named; residents are not.</strong> Trustees and division staff are named. Members of the public are identified by initials only.</li>
+    <li><strong>What the record can't show, we say.</strong> The minutes record vote counts, not how each trustee voted, and HSD does not post meeting video. Each report has an &ldquo;About this page&rdquo; section saying what could not be confirmed.</li>
+  </ul>
+</section>
+
+<footer class="site">
+  <p>An independent summary of public school board meetings. Not affiliated with Hanover School Division. &middot; <a href="privacy/">Privacy</a></p>
+</footer>
+</main>
+</body>
+</html>
