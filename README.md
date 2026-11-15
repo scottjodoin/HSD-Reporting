@@ -6,7 +6,18 @@ Independent: not affiliated with Hanover School Division.
 
 ## Reports
 
-The first reports are in preparation.
+Issue histories, July 2013 to September 2026:
+
+- [Religion in Hanover schools](religion-in-schools/): religious exercises, religious instruction and parent petitions
+- [Gender, sexuality and classroom materials](gender-sexuality-materials/): the diversity policy, sexual-health classes, Policy AK, mature minors
+- [Budgets, school taxes and spending](budget-taxes/): every budget and mill rate, provincial funding, borrowing, trustee pay
+- [New schools and catchments](schools-growth/): enrolment growth, new schools and additions, portables, catchment changes
+- [Programs, graduation and staff](learning-programs/): Grade 9, kindergarten, graduation policy, student services, teachers and EAs
+- [Student safety, discipline and buses](safety-discipline/): safe schools and discipline policies, phones, threats, buses
+- [COVID-19 in Hanover schools](covid-19/): closures, remote learning, masks, protests, 2020–2022
+- [How the board governs itself](board-governance/): conduct, conflicts of interest, hiring, closed meetings, provincial oversight
+
+About the site: [How these reports are made](how-its-made/) · [Data accuracy](data-accuracy/) · [Privacy](privacy/)
 
 ## Site layout
 
@@ -14,6 +25,9 @@ This is a plain static site for GitHub Pages (no Jekyll; see `.nojekyll`). It us
 
 ```
 index.html              Home page listing all reports
+<slug>/index.html       One page per issue report (see Reports above)
+how-its-made/, data-accuracy/  Method and accuracy pages
+sitemap.xml             List of pages for search engines
 assets/css/style.css    Shared styles (follows the browser light/dark setting)
 assets/css/report.css   Extra styles for multi-page topic reports
 privacy/index.html      Privacy page

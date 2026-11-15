@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231f5f8b'/%3E%3Ctext x='16' y='23' font-size='19' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'%3EH%3C/text%3E%3C/svg%3E">
+<title>Data Accuracy | HSD Reporting</title>
+<meta name="description" content="How HSD Reporting reads the board's scanned minutes, how every name and vote is checked, and what the checks found.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Data accuracy | HSD Reporting">
+<meta property="og:description" content="How HSD Reporting reads the board's scanned minutes, how every name and vote is checked, and what the checks found.">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<main>
+
+<p class="sitebar"><a href="../">&larr; HSD Reporting</a></p>
+
+<header class="page">
+  <p class="eyebrow">About this site</p>
+  <h1>Data accuracy</h1>
+  <p class="lede">Most of the board&rsquo;s minutes are scanned paper, read by software. This page explains how that text is checked, how sure we are about names and votes, and how to tell us when something is wrong.</p>
+  <p class="meta">Last updated Nov 14, 2026. Covers the 158 sets of public minutes from July 2, 2013 to Sept 15, 2026.</p>
+</header>
+
+<section class="callout">
+  <h2>In short</h2>
+  <ul>
+    <li><strong>The division&rsquo;s minutes are the official record.</strong> Every decision in our reports links to its page of the minutes on hsd.ca, so anyone can check it.</li>
+    <li><strong>Names: all 3,315 mover and seconder names</strong> in the 1,660 motions match a trustee who was on the board on that date, once 11 names written wrongly in the original minutes were checked against the page images.</li>
+    <li><strong>Attendance: every elected trustee is accounted for at every meeting</strong>: 1,422 entries, each present, sending regrets or on leave.</li>
+    <li><strong>Votes: every vote count was cross-checked</strong> against the number of trustees present and the result written beside it. The checks found 97 clerical slips in the original minutes; in all but one, the result of the vote is still clear.</li>
+    <li><strong>No flags are left open.</strong> Every mismatch the checks raised has been looked at by a person on the page image.</li>
+    <li><strong>Found an error?</strong> <a href="https://github.com/scottjodoin/HSD-Reporting/issues">Open an issue on GitHub</a>. See also <a href="../how-its-made/">How these reports are made</a>.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>How the minutes are read</h2>
+  <ol>
+    <li><strong>Download.</strong> All 158 sets of minutes posted on hsd.ca (903 pages) are saved with their web addresses.</li>
+    <li><strong>Read the scans.</strong> 133 of the 158 are scanned images of printed pages. Tesseract, an open-source text-recognition tool, reads the words on each page. The other 25 already contain text.</li>
+    <li><strong>Find the motions.</strong> A script finds each motion&rsquo;s number, mover, seconder, vote counts and result, and the roll call at the top of each meeting.</li>
+    <li><strong>Cross-check.</strong> Names are checked against the trustees elected for that term, and votes against attendance and the written result (below).</li>
+    <li><strong>Look at the page.</strong> Anything that doesn&rsquo;t line up is checked by a person against the image of the original page, and either corrected or recorded as it appears in the original.</li>
+  </ol>
+</section>
+
+<section>
+  <h2>How accurate are the names?</h2>
+  <p>We built a list of the trustees elected in each term from the division&rsquo;s election releases and from archived copies of its board page, then checked every name in the minutes against the trustees serving on that date.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Measure</th><th>Result</th></tr></thead>
+    <tbody>
+      <tr><td class="measure">Motions found</td><td>1,660, in 158 sets of minutes</td></tr>
+      <tr><td class="measure">Mover and seconder names</td><td>3,315 (4 motions have no mover or seconder written, or one that can&rsquo;t be read, and are left blank)</td></tr>
+      <tr><td class="measure">Names matching a trustee on the board that day</td><td>All 3,315, after the 11 checks below</td></tr>
+      <tr><td class="measure">Names fixed after checking the page image</td><td>11. All 11 were written that way in the original minutes, for example a name combining one trustee&rsquo;s first name with another&rsquo;s surname, a first name only, or an empty pair of brackets. Each was settled from the page itself (such as who was present) or left blank where the page can&rsquo;t settle it.</td></tr>
+      <tr><td class="measure">Trustees at each meeting</td><td>1,422 entries: 1,277 present, 142 regrets, 3 on leave. Every trustee on the board is accounted for at every meeting.</td></tr>
+    </tbody>
+  </table></div>
+  <p>Text-recognition software sometimes misreads letters that look alike, such as a capital I for a lowercase l (&ldquo;FaIk&rdquo; for Falk). The name check allows for those look-alike letters, so a misread name is still matched to the right trustee. Division staff who share a surname with a trustee are told apart by first name.</p>
+  <p><strong>Regrets are recorded without reasons.</strong> A count of regrets says nothing about why a trustee was away, and should not be read as a judgment of anyone.</p>
+</section>
+
+<section>
+  <h2>How accurate are the votes?</h2>
+  <p>Each vote is written twice in the minutes: as counts (&ldquo;Aye: 8 Nay: 0&rdquo;) and as a result (&ldquo;The motion Carried. 8&ndash;0&rdquo;). The checks compare the two, compare the total with the number of trustees present, and check that motion numbers run in order.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>What the check found in the original minutes</th><th>Times</th></tr></thead>
+    <tbody>
+      <tr><td class="measure">Votes adding up to one more or one fewer than the trustees present (for example 9&ndash;0 with 8 present)</td><td>54</td></tr>
+      <tr><td class="measure">Motion numbers skipped, repeated, or carrying the previous year</td><td>34</td></tr>
+      <tr><td class="measure">Counts and written result that disagree (for example &ldquo;Aye: 7 Nay: 0&rdquo; then &ldquo;Carried 6&ndash;0&rdquo;)</td><td>5</td></tr>
+      <tr><td class="measure">Pages headed with the wrong year</td><td>2</td></tr>
+      <tr><td class="measure">Motion with no vote recorded</td><td>1</td></tr>
+      <tr><td class="measure">Roll call listing a name that isn&rsquo;t a trustee</td><td>1</td></tr>
+      <tr><td class="measure"><strong>Total</strong></td><td><strong>97</strong>, across 1,660 motions and 158 meetings</td></tr>
+    </tbody>
+  </table></div>
+  <p><strong>What these figures don&rsquo;t mean.</strong> They are clerical slips in writing up the minutes, the kind any record-keeper makes. In every case but one, the motion&rsquo;s result is still clear from the page, and none of the slips changes whether a motion carried. The exception is a religious-exercises motion on Sept 1, 2020, which has no vote written in the minutes; our reports say so wherever it comes up. Where our reports give a vote, they give it as the minutes record it.</p>
+</section>
+
+<section>
+  <h2>How accurate are the words?</h2>
+  <p>We have not measured word-by-word accuracy for the scanned pages. Names, dates, motion numbers and votes are covered by the checks above. Other words can be misread, especially on faint or crooked scans. That is why our reports link every decision to the original page, and why any quote from the minutes is checked against the page image when the text looks wrong.</p>
+</section>
+
+<section>
+  <h2>What isn&rsquo;t covered</h2>
+  <ul>
+    <li><strong>Minutes before July 2013</strong> are not posted on hsd.ca.</li>
+    <li><strong>Minutes after Sept 15, 2026</strong> were not yet posted when these reports were written.</li>
+    <li><strong>Closed (in-camera) meetings.</strong> The board adopts their minutes in public, but the minutes themselves are not published.</li>
+    <li><strong>Meeting video.</strong> The division does not post an archive of meeting recordings.</li>
+    <li><strong>Four news-release attachments</strong> linked from old division news posts could not be found on hsd.ca or in the Internet Archive.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Report an error</h2>
+  <p>If a decision, a name or a summary looks wrong, please <a href="https://github.com/scottjodoin/HSD-Reporting/issues">open an issue on the site&rsquo;s GitHub page</a>. It helps to include:</p>
+  <ul>
+    <li>the report or page (a link is best);</li>
+    <li>the meeting date, and the page of the minutes if you have it;</li>
+    <li>what you think is wrong.</li>
+  </ul>
+  <p>We check every error report against the minutes, fix what is wrong, and note the correction.</p>
+</section>
+
+<footer class="site">
+  <p><a href="../">HSD Reporting</a> &middot; An independent summary of public school board meetings. Not affiliated with Hanover School Division. &middot; <a href="../how-its-made/">How it's made</a> &middot; <a href="../privacy/">Privacy</a></p>
+</footer>
+
+</main>
+</body>
+</html>

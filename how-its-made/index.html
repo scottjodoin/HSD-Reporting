@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231f5f8b'/%3E%3Ctext x='16' y='23' font-size='19' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'%3EH%3C/text%3E%3C/svg%3E">
+<title>How These Reports Are Made | HSD Reporting</title>
+<meta name="description" content="Where HSD Reporting's information comes from, how the board's minutes are turned into reports, and what AI does and doesn't do.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How these reports are made | HSD Reporting">
+<meta property="og:description" content="Where HSD Reporting's information comes from, how the board's minutes are turned into reports, and what AI does and doesn't do.">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<main>
+
+<p class="sitebar"><a href="../">&larr; HSD Reporting</a></p>
+
+<header class="page">
+  <p class="eyebrow">About this site</p>
+  <h1>How these reports are made</h1>
+  <p class="lede">This site is a civic service. It turns thirteen years of Hanover School Division board minutes into plain-language histories of the issues families, students, staff and voters care about, with every decision linked to the page of the minutes where it is recorded.</p>
+  <p class="meta">Last updated Nov 14, 2026.</p>
+</header>
+
+<section class="callout">
+  <h2>In short</h2>
+  <ul>
+    <li><strong>Everything starts from the public record:</strong> the board&rsquo;s own minutes, agendas, policies, budgets and news releases on <a href="https://hsd.ca/governance/agendas-minutes/">hsd.ca</a>.</li>
+    <li><strong>Every decision links to its page of the official minutes</strong>, so you can read it yourself.</li>
+    <li><strong>News coverage fills in what the minutes leave out</strong>, and every claim from it is attributed and linked.</li>
+    <li><strong>AI helps with the reading and drafting; the rules are fixed and the evidence is shown.</strong></li>
+    <li><strong>Members of the public who appear in the board&rsquo;s records are not named.</strong></li>
+  </ul>
+</section>
+
+<section>
+  <h2>Where the information comes from</h2>
+  <ul>
+    <li><strong>Minutes.</strong> The board&rsquo;s published minutes are the official record of its decisions: each motion, who moved and seconded it, and how many trustees voted for and against. This site uses all 158 sets of public minutes posted on hsd.ca, from July 2, 2013 to Sept 15, 2026.</li>
+    <li><strong>Agendas</strong> (143 of them), to see what was on the table and when.</li>
+    <li><strong>Division policies</strong> (the 62 posted on hsd.ca), <strong>budgets</strong> and <strong>audited financial statements</strong>.</li>
+    <li><strong>The division&rsquo;s own news releases</strong> about the board (63 posts since 2015).</li>
+    <li><strong>News coverage</strong> from outlets such as Steinbach Online, The Carillon and the Winnipeg Free Press, and <strong>provincial records</strong> such as government news releases and legislation, for the background the minutes don&rsquo;t give.</li>
+  </ul>
+  <p>The site is independent. It is not affiliated with Hanover School Division, any trustee or any candidate.</p>
+</section>
+
+<section>
+  <h2>From minutes to report</h2>
+  <ol>
+    <li><strong>Collect.</strong> Every minutes, agenda, policy, budget and news file the division posts is downloaded and listed with its web address. A few files that have since disappeared from hsd.ca were recovered from the Internet Archive.</li>
+    <li><strong>Make the scans readable.</strong> 133 of the 158 sets of minutes are scanned images of printed pages. Text recognition software (Tesseract, an open-source tool) reads the words on each page so the minutes can be searched.</li>
+    <li><strong>Pull out the decisions.</strong> A script finds every motion in the minutes: its number, the mover and seconder, the vote counts and the result. That gives 1,660 motions. It also reads who was present at each meeting.</li>
+    <li><strong>Check them.</strong> Each name is checked against the list of trustees elected for that term, and each vote count against the number of trustees present and the result written beside it. Anything that doesn&rsquo;t line up is checked by a person against the image of the page. The <a href="../data-accuracy/">Data accuracy</a> page has the details.</li>
+    <li><strong>Research an issue.</strong> For each report, the minutes, agendas, policies and news releases for every meeting since 2013 are searched for the issue and read in full around each mention. News coverage and provincial records are then used to explain why the issue came up and what happened next.</li>
+    <li><strong>Write and check.</strong> The report is drafted from that evidence. Every decision links to its page of the minutes; every quote is copied word for word from its source and linked; and each report ends with an &ldquo;About this page&rdquo; section saying what could not be confirmed.</li>
+    <li><strong>Correct.</strong> When someone reports an error, it is checked against the minutes, fixed, and the correction is noted.</li>
+  </ol>
+</section>
+
+<section>
+  <h2>What the record can and can&rsquo;t show</h2>
+  <ul>
+    <li><strong>Votes are counts.</strong> The minutes record how many trustees voted for and against a motion, not who. They name individual votes only when a trustee asks for a recorded vote, which has happened twice in the public minutes since 2013. So this site does not say how a trustee voted unless the minutes or a named news source do.</li>
+    <li><strong>There is no meeting video archive.</strong> Unlike Steinbach City Council, the board does not post recordings of past meetings, so its debates are known only from the brief minutes and from news coverage.</li>
+    <li><strong>Much is decided in closed meetings.</strong> The board often meets in camera, as a &ldquo;Committee of the Whole&rdquo;. It adopts the minutes of those meetings in public, but the minutes themselves are not published.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>What AI does, and what it doesn&rsquo;t</h2>
+  <p>AI tools do much of the heavy lifting: searching thousands of pages of minutes, finding news coverage, and drafting the reports. That is what makes a site like this possible for a small independent project. We use Anthropic&rsquo;s Claude for the research and drafting.</p>
+  <ul>
+    <li><strong>AI works within fixed rules.</strong> Link every claim to its source, quote exactly, name what couldn&rsquo;t be confirmed, take no side, never guess at motives, and never infer how a trustee voted from a vote count.</li>
+    <li><strong>The evidence is always shown.</strong> Every decision links to its page of the minutes, so a reader never has to take the AI&rsquo;s word, or ours.</li>
+    <li><strong>An editor decides what is published.</strong> A person chooses the topics, sets the rules and decides what goes on the site.</li>
+    <li><strong>AI makes mistakes.</strong> It can misread a scanned word or misdescribe a decision. How we check, and what we have found, is on the <a href="../data-accuracy/">Data accuracy</a> page.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Privacy</h2>
+  <p>Trustees and senior division staff are named, because they act in public roles. People speaking for an organization are named with it. Parents, students, other employees and members of the public who appear in the board&rsquo;s records are identified by initials only, or not at all. See <a href="../privacy/">Privacy</a>.</p>
+</section>
+
+<section>
+  <h2>Questions or corrections</h2>
+  <p>If something looks wrong, please <a href="https://github.com/scottjodoin/HSD-Reporting/issues">open an issue on the site&rsquo;s GitHub page</a> with the page and the meeting date, so we can check it against the minutes.</p>
+</section>
+
+<footer class="site">
+  <p><a href="../">HSD Reporting</a> &middot; An independent summary of public school board meetings. Not affiliated with Hanover School Division. &middot; <a href="../data-accuracy/">Data accuracy</a> &middot; <a href="../privacy/">Privacy</a></p>
+</footer>
+
+</main>
+</body>
+</html>
